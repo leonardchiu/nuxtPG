@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="px-10">
     <v-row>
       <v-col cols="12" md="6" lg="4">
         <v-card
