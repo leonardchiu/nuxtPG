@@ -70,12 +70,21 @@ export default {
 					error: colors.deepOrange.accent4,
 					success: colors.green.accent3
 				}
-			}
-		}
+      }
+    },
+    defaultAssets: {
+      icons: 'md',
+      fonts: {
+        family: 'Roboto'
+      }
+    },
+    icons: {
+      iconfont: 'md'
+    }
 	},
 	/*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
-	build: {}
+  build: {}
 };
