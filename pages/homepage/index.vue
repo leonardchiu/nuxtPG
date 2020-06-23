@@ -4,6 +4,7 @@
     <Hero />
     <!-- <v-container> -->
     <Card />
+    <Main />
     <!-- </v-container> -->
     <!-- </v-app> -->
   </div>
@@ -12,12 +13,14 @@
 <script>
 import Card from "../../components/homepage/cards.vue";
 import Hero from "../../components/homepage/hero.vue";
+import Main from "../../components/homepage/mainDesc.vue";
 
 export default {
   layout: "secondary",
   components: {
     Card,
-    Hero
+    Hero,
+    Main
   }
 };
 </script>
