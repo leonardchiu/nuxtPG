@@ -15,7 +15,7 @@
             In recent years, there are many low code technologies that allows
             rapid development application. Over time, these technologies has now
             mature enough to be adopted by business operations. Learn how much
-            faster and lower cost of development comparedt o conventional
+            faster and lower cost of development compared to conventional
             development cycle.
           </p>
           <h2>What is RPA?</h2>

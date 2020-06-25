@@ -26,6 +26,25 @@
       </v-list>
     </v-navigation-drawer>
     <nuxt />
+    <v-footer color="#e8e8e8" absolute class="px-16 py-6">
+      <v-row>
+        &copy; {{ new Date().getFullYear() }} - <strong>Leonard Chiu</strong>
+<v-spacer></v-spacer>
+      <a href="https://github.com" target="blank">
+        <v-img
+          :src="require('@/assets/img/GitHub_Logo.png')"
+          max-width="70px"
+          class="mx-4"
+        ></v-img>
+      </a>
+      <a href="https://twitter.com/home" target="blank">
+        <v-img
+          :src="require('@/assets/img/Twitter.png')"
+          max-width="30px"
+          class="mx-4"
+        ></v-img></a>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
