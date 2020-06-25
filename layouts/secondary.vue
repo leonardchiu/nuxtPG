@@ -25,7 +25,9 @@
           <v-list-item> <v-icon left>edit</v-icon>Contact </v-list-item> -->
       </v-list>
     </v-navigation-drawer>
+
     <nuxt />
+
     <v-footer color="#e8e8e8" absolute class="px-16 py-6">
       <v-row>
         &copy; {{ new Date().getFullYear() }} - <strong>Leonard Chiu</strong>
