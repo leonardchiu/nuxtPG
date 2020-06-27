@@ -60,5 +60,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+ asyncData({params}) {
+    return axios.get('http://localhost:1337/blogs')
+    .then(response => {
+    console.log(response)
+    })
+  },
+};
 </script>
