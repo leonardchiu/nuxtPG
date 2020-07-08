@@ -1,7 +1,7 @@
 <template>
   <v-container class="px-10">
     <v-row>
-      <v-col cols="12" md="6" lg="4" v-for="(blog, i) in blogs.data" :key="blog.Id">
+      <v-col cols="12" md="6" lg="4" v-for="(blog, i) in posts" :key="i">
         <v-card dark tile elevation="10" color="blue lighten-10" class="pa-4">
           <v-card-title>
             <v-icon left>face</v-icon>
@@ -46,24 +46,19 @@
 import axios from "axios";
 
 export default {
-  //  asyncData({params}) {
-  //     return axios.get('http://localhost:1337/blogs')
-  //     .then(response => {
-  //     console.log(response)
-  //     })
-  //   }
+  props: ["posts"],
   data() {
     return {
-      blogs: "",
+      // posts: "",
       strapiURL: "http://localhost:1337"
     };
-  },
-  mounted() {
-    return axios.get("http://localhost:1337/blogs").then(response => {
-      // const json = JSON.stringify(response);
-      this.blogs = response;
-      console.log(response.data);
-    });
   }
+  // mounted() {
+  //   return axios.get("http://localhost:1337/blogs").then(response => {
+  //     // const json = JSON.stringify(response);
+  //     this.blogs = response;
+  //     console.log(response.data);
+  //   });
+  // }
 };
 </script>

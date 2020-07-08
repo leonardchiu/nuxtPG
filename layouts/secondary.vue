@@ -49,11 +49,8 @@ export default {
   data() {
     return {
       drawer: false,
-      menus: [
-        { name: "Home", index: "1", icon: "face" },
-        { name: "Blog", index: "2", icon: "opacity" },
-        { name: "Contact", index: "3", icon: "edit" }
-      ]
+      posts: "",
+      menus: [{ name: "Home" }, { name: "Blog" }, { name: "Contact Us" }]
     };
   }
 };
