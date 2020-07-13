@@ -48,6 +48,7 @@ export default {
   async asyncData() {
     const response = await axios.get("http://localhost:1337/blogs");
     const data = await response.data;
+    console.log(data);
     return { posts: data };
   }
   // async fetch() {
