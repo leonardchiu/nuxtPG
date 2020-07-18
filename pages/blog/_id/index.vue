@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-12">
+  <v-container class="mt-16">
     <h1>{{ post.Title }}</h1>
     <p>{{ post.Post }}</p>
   </v-container>

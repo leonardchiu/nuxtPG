@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" md="6" lg="4" v-for="(blog, i) in reversePosts" :key="i">
         <nuxt-link :to="'/blog/' + blog.id" class="card">
-          <v-card dark tile elevation="10" color="blue lighten-10" class="pa-4">
+          <v-card class="pa-4" dark tile elevation="10" color="blue lighten-10">
             <v-card-title>
               <v-icon left>face</v-icon>
               {{blog.Title}}
@@ -29,12 +29,18 @@ export default {
   props: ["posts"],
   data() {
     return {
-      strapiURL: "http://localhost:1337"
+      strapiURL: "http://localhost:1337",
+      postID: ""
     };
   },
   computed: {
     reversePosts() {
-      return this.posts.reverse().slice(0, 3);
+      return this.posts.slice().reverse();
+    }
+  },
+  methods: {
+    getID() {
+      console.log("click!");
     }
   }
   // mounted() {

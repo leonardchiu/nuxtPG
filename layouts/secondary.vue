@@ -11,12 +11,12 @@
       <v-toolbar-items class="hidden-xs-only">
         <v-btn to="/" text>Home</v-btn>
         <v-btn to="/blog" text>Blog</v-btn>
-        <v-btn to="/contact" text>Contact Us</v-btn>
+        <v-btn to="/about-me" text>About Me</v-btn>
       </v-toolbar-items>
     </v-app-bar>
     <v-navigation-drawer absolute right v-model="drawer">
       <v-list class="ma-5">
-        <v-list-item v-for="i in menus" :key="i.name">
+        <v-list-item v-for="i in menus" :key="i.name" :href="i.link">
           <v-icon left>{{ i.icon }}</v-icon>
           {{ i.name }}
         </v-list-item>
@@ -50,7 +50,11 @@ export default {
     return {
       drawer: false,
       posts: "",
-      menus: [{ name: "Home" }, { name: "Blog" }, { name: "Contact Us" }]
+      menus: [
+        { name: "Home", link: "/" },
+        { name: "Blog", link: "/blog" },
+        { name: "About Me", link: "/about-me" }
+      ]
     };
   }
 };
