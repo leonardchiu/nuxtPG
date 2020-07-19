@@ -50,8 +50,9 @@ export default {
       "https://leonardchiu-strapi.herokuapp.com/blogs"
     );
     const data = await response.data;
-    console.log(data);
-    return { posts: data };
+    const reverseData = await data.reverse().slice();
+    console.log(reverseData);
+    return { posts: reverseData };
   }
   // async fetch() {
   //   const { data } = await axios.get("http://localhost:1337/blogs");
