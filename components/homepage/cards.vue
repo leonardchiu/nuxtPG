@@ -12,7 +12,7 @@
             <v-img
               v-for="image in blog.Images"
               :key="image.id"
-              :src="'https://leonardchiu-strapi.herokuapp.com/' + image.url"
+              :src="'https://leonardchiu-strapi.herokuapp.com' + image.url"
               max-width="200px"
             ></v-img>
           </v-card>
