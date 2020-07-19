@@ -81,10 +81,10 @@
 </template>
 
 <script>
-import Card from "../../components/homepage/Cards.vue";
-import Hero from "../../components/homepage/Hero.vue";
-import Main from "../../components/homepage/MainDesc.vue";
-import Tech from "../../components/homepage/Technologies.vue";
+import Card from "../../components/homepage/cards.vue";
+import Hero from "../../components/homepage/hero.vue";
+import Main from "../../components/homepage/mainDesc.vue";
+import Tech from "../../components/homepage/technologies.vue";
 import axios from "axios";
 
 export default {
