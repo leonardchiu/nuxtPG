@@ -6,13 +6,13 @@
           <v-card dark tile elevation="10" color="blue lighten-10" class="pa-4">
             <v-card-title>
               <v-icon left>face</v-icon>
-              {{blog.Title}}
+              {{ blog.Title }}
             </v-card-title>
             <v-card-text>{{ blog.Post }}</v-card-text>
             <v-img
               v-for="image in blog.Images"
               :key="image.id"
-              :src="'http://localhost:1337' + image.url"
+              :src="'https://leonardchiu-strapi.herokuapp.com/' + image.url"
               max-width="200px"
             ></v-img>
           </v-card>
