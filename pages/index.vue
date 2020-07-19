@@ -46,7 +46,9 @@ export default {
   //     // return { posts: res };
   //   });
   async asyncData() {
-    const response = await axios.get("http://localhost:1337/blogs");
+    const response = await axios.get(
+      "https://leonardchiu-strapi.herokuapp.com/blogs"
+    );
     const data = await response.data;
     console.log(data);
     return { posts: data };

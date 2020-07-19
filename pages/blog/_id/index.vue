@@ -6,7 +6,7 @@
         <v-img
           v-for="image in post.Images"
           :key="image.id"
-          :src="'http://localhost:1337' + image.url"
+          :src="'https://leonardchiu-strapi.herokuapp.com' + image.url"
           max-width="400px"
         ></v-img>
         <p>{{ post.Post }}</p>
@@ -33,7 +33,9 @@ export default {
   mounted() {
     const id = this.$route.params.id;
     return axios
-      .get(`http://localhost:1337/blogs/${this.$route.params.id}`)
+      .get(
+        `https://leonardchiu-strapi.herokuapp.com/blogs/${this.$route.params.id}`
+      )
       .then(res => {
         const data = res.data;
         this.post = data;
