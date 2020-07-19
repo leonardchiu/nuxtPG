@@ -16,14 +16,14 @@ export default {
   //     posts: ""
   //   };
   // },
-  components: { BlogCard }
-  // async asyncData() {
-  //   const response = await axios.get(
-  //     "hhttps://leonardchiu-strapi.herokuapp.com/blogs"
-  //   );
-  //   const data = await response.data;
-  //   console.log(data);
-  //   return { posts: data };
-  // }
+  components: { BlogCard },
+  async asyncData() {
+    const response = await axios.get(
+      "https://leonardchiu-strapi.herokuapp.com/blogs"
+    );
+    const data = await response.data;
+    console.log(data);
+    return { posts: data };
+  }
 };
 </script>
