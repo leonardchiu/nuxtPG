@@ -7,7 +7,7 @@
 
 <script>
 import axios from "axios";
-import BlogCard from "../../components/homepage/BlogCards.vue";
+import BlogCard from "../../components/homepage/blogCards.vue";
 
 export default {
   layout: "secondary",

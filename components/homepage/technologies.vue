@@ -93,14 +93,14 @@
     </v-row>
 
     <v-row class="mb-8">
-      <v-col cols="6" md="3">
+      <!-- <v-col cols="6" md="3">
         <v-row justify="center">
           <v-img
             :src="require('../../assets/img/mongoDB.png')"
             max-width="180px"
           ></v-img>
         </v-row>
-      </v-col>
+      </v-col> -->
       <v-col cols="6" md="3">
         <v-row justify="center">
           <v-img
