@@ -2,7 +2,7 @@
   <v-container class="my-16 px-10">
     <h1>About Me</h1>
     <v-img
-      :src="require('@/assets/img/About-Me.png')"
+      :src="require('@/assets/img/About-Me2.png')"
       max-width="200px"
       class="float-left ma-4"
     ></v-img>
@@ -88,7 +88,7 @@ import Tech from "../../components/homepage/technologies.vue";
 import axios from "axios";
 
 export default {
-  layout: "secondary",
+  // layout: "secondary",
   components: {
     Card,
     Hero,

@@ -19,7 +19,7 @@ import Tech from "../components/homepage/technologies.vue";
 import axios from "axios";
 
 export default {
-  layout: "secondary",
+  // layout: "secondary",
   components: {
     Card,
     Hero,

@@ -19,7 +19,7 @@
 import axios from "axios";
 
 export default {
-  layout: "secondary",
+  // layout: "secondary",
   data() {
     return {
       post: ""
