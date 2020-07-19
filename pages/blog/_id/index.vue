@@ -1,7 +1,17 @@
 <template>
   <v-container class="mt-16">
-    <h1>{{ post.Title }}</h1>
-    <p>{{ post.Post }}</p>
+    <v-row justify="center">
+      <v-col cols="12" sm="12" md="10">
+        <h1>{{ post.Title }}</h1>
+        <v-img
+          v-for="image in post.Images"
+          :key="image.id"
+          :src="'http://localhost:1337' + image.url"
+          max-width="400px"
+        ></v-img>
+        <p>{{ post.Post }}</p>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -27,9 +37,15 @@ export default {
       .then(res => {
         const data = res.data;
         this.post = data;
-        console.log(data.Title);
+        console.log(data);
       });
     console.log(this.$route.params.id);
   }
 };
 </script>
+
+<style scoped>
+.container {
+  width: 80%;
+}
+</style>
