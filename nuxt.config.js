@@ -40,7 +40,9 @@ export default {
 		// Doc: https://axios.nuxtjs.org/usage
 		'@nuxtjs/axios',
 		// Doc: https://github.com/nuxt/content
-		'@nuxt/content'
+    '@nuxt/content',
+    // See https://github.com/markdown-it/markdown-it
+    '@nuxtjs/markdownit'
 	],
 	/*
   ** Axios module configuration
@@ -53,7 +55,16 @@ export default {
   ** Content module configuration
   ** See https://content.nuxtjs.org/configuration
   */
-	content: {},
+  content: {},
+  /*
+  **Markitdown module configuration
+  */
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
 	/*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
