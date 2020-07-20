@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-16">
+  <v-container class="ma-16">
     <v-row justify="center">
       <v-col cols="12" sm="12" md="10">
         <h1>{{ post.Title }}</h1>
@@ -9,7 +9,7 @@
           :src="'https://leonardchiu-strapi.herokuapp.com' + image.url"
           max-width="400px"
         ></v-img>
-        <div v-html="$md.render(post.Post)"></div>
+        <div v-if="post.Post" id="editor" v-html="$md.render(post.Post)"></div>
         <!-- <p>{{ post.Post }}</p> -->
       </v-col>
     </v-row>

@@ -8,7 +8,7 @@
               <v-icon left>face</v-icon>
               {{ blog.Title }}
             </v-card-title>
-            <v-card-text>{{ blog.Post }}</v-card-text>
+            <!-- <v-card-text>{{ blog.Post }}</v-card-text> -->
             <v-img
               v-for="image in blog.Images"
               :key="image.id"
