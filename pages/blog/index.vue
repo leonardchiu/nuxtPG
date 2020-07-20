@@ -22,7 +22,7 @@ export default {
       "https://leonardchiu-strapi.herokuapp.com/blogs"
     );
     const data = await response.data;
-    console.log(data);
+    // console.log(data);
     return { posts: data };
   }
 };

@@ -40,7 +40,7 @@ export default {
       .then(res => {
         const data = res.data;
         this.post = data;
-        console.log(data);
+        // console.log(data);
       });
     console.log(this.$route.params.id);
   }

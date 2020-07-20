@@ -51,7 +51,7 @@ export default {
     );
     const data = await response.data;
     const reverseData = await data.reverse().slice();
-    console.log(reverseData);
+    // console.log(reverseData);
     return { posts: reverseData };
   }
   // async fetch() {
