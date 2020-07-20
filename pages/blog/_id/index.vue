@@ -9,7 +9,8 @@
           :src="'https://leonardchiu-strapi.herokuapp.com' + image.url"
           max-width="400px"
         ></v-img>
-        <p>{{ post.Post }}</p>
+        <div v-html="$md.render(post.Post)"></div>
+        <!-- <p>{{ post.Post }}</p> -->
       </v-col>
     </v-row>
   </v-container>
