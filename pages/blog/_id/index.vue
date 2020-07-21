@@ -6,7 +6,7 @@
         <v-img
           v-for="image in post.Images"
           :key="image.id"
-          :src="'https://leonardchiu-strapi.herokuapp.com' + image.url"
+          :src="image.url"
           max-width="400px"
         ></v-img>
         <div v-if="post.Post" id="editor" v-html="$md.render(post.Post)"></div>
