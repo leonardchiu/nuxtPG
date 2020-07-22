@@ -1,5 +1,5 @@
 <template>
-  <v-container class="ma-16">
+  <v-container class="my-16">
     <v-row justify="center">
       <v-col cols="12" sm="12" md="10">
         <h1>{{ post.Title }}</h1>
@@ -7,7 +7,6 @@
           v-for="image in post.Images"
           :key="image.id"
           :src="image.url"
-          max-width="400px"
         ></v-img>
         <div v-if="post.Post" id="editor" v-html="$md.render(post.Post)"></div>
         <!-- <p>{{ post.Post }}</p> -->

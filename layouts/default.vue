@@ -2,7 +2,9 @@
   <v-app>
     <v-app-bar flat absolute class="px-12">
       <v-toolbar-title>
-        <h3>LEONARD CHIU</h3>
+        <nuxt-link to="/" class="title">
+          <h3>LEONARD CHIU</h3>
+        </nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <span class="hidden-sm-and-up">
@@ -33,14 +35,14 @@
         &copy; {{ new Date().getFullYear() }} -&nbsp;
         <strong>Leonard Chiu</strong>
         <v-spacer></v-spacer>
-        <a href="https://github.com" target="blank">
+        <a href="https://github.com/leonardchiu" target="blank">
           <v-img
             :src="require('@/assets/img/GitHub_Logo.png')"
             max-width="70px"
             class="mx-4"
           ></v-img>
         </a>
-        <a href="https://twitter.com/home" target="blank">
+        <a href="https://twitter.com/leonardchiu" target="blank">
           <v-img
             :src="require('@/assets/img/Twitter.png')"
             max-width="30px"
@@ -67,3 +69,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+a {
+  text-decoration: none;
+  color: black;
+}
+</style>

@@ -5,7 +5,7 @@
         <nuxt-link :to="'/blog/' + blog.id" class="card">
           <v-card dark tile elevation="10" color="blue lighten-10" class="pa-4">
             <v-card-title>
-              <v-icon left>face</v-icon>
+              <!-- <v-icon left>face</v-icon> -->
               {{ blog.Title }}
             </v-card-title>
             <!-- <v-card-text>{{ blog.Post }}</v-card-text> -->
@@ -13,7 +13,7 @@
               v-for="image in blog.Images"
               :key="image.id"
               :src="image.url"
-              max-width="200px"
+              max-width="300px"
             ></v-img>
           </v-card>
         </nuxt-link>
@@ -55,5 +55,6 @@ export default {
 .v-card__text,
 .v-card__title {
   word-break: normal; /* maybe !important  */
+  line-height: 1.2;
 }
 </style>
