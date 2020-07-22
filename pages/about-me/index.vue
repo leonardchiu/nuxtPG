@@ -2,7 +2,7 @@
   <v-container class="my-16 px-10">
     <h1>About Me</h1>
     <v-img
-      :src="require('@/assets/img/About-Me2.png')"
+      :src="require('@/assets/img/About-Me-s.png')"
       max-width="200px"
       class="float-left ma-4"
     ></v-img>
