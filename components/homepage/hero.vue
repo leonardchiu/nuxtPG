@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid fill-height class="ma-0 pa-0 full">
+  <v-container>
     <v-img :src="require('@/assets/img/hero.jpg')" height="600px">
       <v-container>
         <v-row>
