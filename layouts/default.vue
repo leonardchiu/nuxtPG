@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar flat absolute class="px-12">
+    <v-app-bar flat absolute class="px-2 px-md-16">
       <v-toolbar-title>
         <nuxt-link to="/" class="title">
           <h3>LEONARD CHIU</h3>
@@ -30,7 +30,7 @@
 
     <nuxt />
 
-    <v-footer color="#e8e8e8" absolute class="px-16 py-6">
+    <v-footer color="#e8e8e8" absolute class="px-8 px-md-16 py-6">
       <v-row>
         &copy; {{ new Date().getFullYear() }} -&nbsp;
         <strong>Leonard Chiu</strong>
@@ -39,14 +39,14 @@
           <v-img
             :src="require('@/assets/img/GitHub_Logo.png')"
             max-width="70px"
-            class="mx-4"
+            class="mx-2"
           ></v-img>
         </a>
         <a href="https://twitter.com/leonardchiu" target="blank">
           <v-img
             :src="require('@/assets/img/Twitter.png')"
             max-width="30px"
-            class="mx-4"
+            class="mx-2"
           ></v-img>
         </a>
       </v-row>
@@ -72,7 +72,7 @@ export default {
 
 <style scoped>
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
 }
 </style>
