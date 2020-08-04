@@ -26,11 +26,11 @@ export default {
     Main,
     Tech
   },
-  data() {
-    return {
-      posts: []
-    };
-  },
+  // data() {
+  //   return {
+  //     posts: []
+  //   };
+  // },
   // mounted() {
   //   return axios.get("http://localhost:1337/blogs").then(response => {
   //     // const json = JSON.stringify(response);
@@ -50,7 +50,7 @@ export default {
       "https://leonardchiu-strapi.herokuapp.com/blogs"
     );
     const data = await response.data;
-    const reverseData = await data.reverse().slice();
+    const reverseData = await data.reverse();
     console.log(data);
     return { posts: reverseData };
   }

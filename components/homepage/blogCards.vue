@@ -35,7 +35,7 @@ export default {
   },
   computed: {
     reversePosts() {
-      return this.posts.reverse().slice();
+      return this.posts.reverse();
     }
   },
   methods: {
