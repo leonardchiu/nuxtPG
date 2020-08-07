@@ -106,3 +106,6 @@ export default {
    */
   build: {}
 };
+
+
+/*This is for the new branch vuex push */
