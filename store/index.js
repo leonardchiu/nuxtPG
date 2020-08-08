@@ -1,4 +1,5 @@
 import Vuex from 'vuex'
+import axios from 'axios'
 
 const vuexStore = () => {
   return new Vuex.Store({
@@ -11,6 +12,16 @@ const vuexStore = () => {
       }
     },
     actions: {
+      nuxtServerInit(vuexContext, context) {
+        return axios.get('https://leonardchiu-strapi.herokuapp.com/blogs')
+        .then(res => {
+          const postArray = [];
+          for (const key in res.data) {
+            postArray.push(res.data[key])
+          }
+          vuexContext.commit('setPosts', postArray)
+        })
+      },
       setPosts(vuexContext, posts) {
         vuexContext.commit('setPosts', posts)
       }

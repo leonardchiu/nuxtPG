@@ -45,22 +45,19 @@ export default {
   //     // console.log(res.data);
   //     // return { posts: res };
   //   });
-  async asyncData() {
-    const response = await axios.get(
-      "https://leonardchiu-strapi.herokuapp.com/blogs"
-    );
-    const data = await response.data;
-    const reverseData = await data.reverse();
-    // console.log(data);
-    return { posts: reverseData };
-  },
-  // async fetch() {
-  //   const { data } = await axios.get("http://localhost:1337/blogs");
-  //   this.posts = data;
-  // }
-  created() {
-    this.$store.dispatch('setPosts', this.posts)
-  },
+
+  // async asyncData() {
+  //   const response = await axios.get(
+  //     "https://leonardchiu-strapi.herokuapp.com/blogs"
+  //   );
+  //   const data = await response.data;
+  //   // console.log(data);
+  //   return { posts: data };
+  // },
+
+  // created() {
+  //   this.$store.dispatch('setPosts', this.posts)
+  // },
   computed: {
     loadedPosts() {
       return this.$store.getters.loadedPosts
