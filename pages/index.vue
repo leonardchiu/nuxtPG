@@ -3,7 +3,7 @@
   <!-- <v-app> -->
   <v-container>
     <Hero />
-    <Card :posts="posts" />
+    <Card :posts="loadedPosts" />
     <Main />
     <Tech />
   </v-container>
@@ -51,12 +51,20 @@ export default {
     );
     const data = await response.data;
     const reverseData = await data.reverse();
-    console.log(data);
+    // console.log(data);
     return { posts: reverseData };
-  }
+  },
   // async fetch() {
   //   const { data } = await axios.get("http://localhost:1337/blogs");
   //   this.posts = data;
   // }
+  created() {
+    this.$store.dispatch('setPosts', this.posts)
+  },
+  computed: {
+    loadedPosts() {
+      return this.$store.getters.loadedPosts
+    }
+  }
 };
 </script>
