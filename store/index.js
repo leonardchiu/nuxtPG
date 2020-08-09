@@ -1,5 +1,5 @@
-import Vuex from 'vuex'
-import axios from 'axios'
+import Vuex from 'vuex';
+import axios from 'axios';
 
 const vuexStore = () => {
   return new Vuex.Store({
@@ -29,6 +29,9 @@ const vuexStore = () => {
     getters: {
       loadedPosts(state) {
         return state.loadedPosts
+      },
+      reversePosts(state) {
+        return state.loadedPosts.reverse()
       }
     }
   })

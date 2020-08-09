@@ -26,16 +26,9 @@
 import axios from "axios";
 
 export default {
-  props: ["posts"],
-  data() {
-    return {
-      strapiURL: "http://localhost:1337",
-      postID: ""
-    };
-  },
   computed: {
     reversePosts() {
-      return this.posts.reverse();
+      return this.$store.getters.reversePosts
     }
   },
   methods: {
@@ -43,13 +36,6 @@ export default {
       console.log("click!");
     }
   }
-  // mounted() {
-  //   return axios.get("http://localhost:1337/blogs").then(response => {
-  //     // const json = JSON.stringify(response);
-  //     this.blogs = response;
-  //     console.log(response.data);
-  //   });
-  // }
 };
 </script>
 
