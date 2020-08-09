@@ -36,5 +36,5 @@ const vuexStore = () => {
     }
   })
 }
-
+// modular push
 export default vuexStore
