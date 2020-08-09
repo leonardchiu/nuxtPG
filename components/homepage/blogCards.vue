@@ -28,7 +28,7 @@ import axios from "axios";
 export default {
   computed: {
     reversePosts() {
-      return this.$store.getters.reversePosts
+      return this.$store.getters['posts/reversePosts']
     }
   },
   methods: {
