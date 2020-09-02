@@ -1,8 +1,9 @@
 <template>
   <v-container>
     <Hero />
-    <Card />
     <Main />
+    <h1>Latest Blogs</h1>
+    <Card />
     <Tech />
   </v-container>
 </template>
@@ -23,3 +24,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+h1 {
+  padding: 30px 0px 0px 30px;
+}
+</style>
