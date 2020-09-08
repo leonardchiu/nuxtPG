@@ -13,10 +13,9 @@
 		"@nuxtjs/axios": "^5.12.2",
 		"@nuxtjs/markdownit": "^1.2.10",
 		"nuxt": "^2.14.0",
-		"vue-loader": "^15.9.3",
-		"vuetify": "^2.3.10"
+		"vue-loader": "^15.9.3"
 	},
 	"devDependencies": {
-		"@nuxtjs/vuetify": "^1.11.2"
+		"@nuxtjs/tailwindcss": "^3.0.2"
 	}
 }

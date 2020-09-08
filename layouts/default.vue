@@ -1,5 +1,16 @@
 <template>
-  <v-app>
+<div>
+  <div class="bg-gray-200 flex justify-between px-20 py-4 items-center">
+    <h3 class="text-2xl font-bold">LEONARD CHIU</h3>
+    <ul class="flex">
+      <li class="px-4">Home</li>
+      <li class="px-4">Blog</li>
+      <li class="px-4">Contact</li>
+    </ul>
+  </div>
+  
+</div>
+  <!-- <v-app>
     <v-app-bar flat absolute class="px-2 px-md-16">
       <v-toolbar-title>
         <nuxt-link to="/" class="title">
@@ -21,11 +32,11 @@
         <v-list-item v-for="i in menus" :key="i.name" :to="i.link">
           <v-icon left>{{ i.icon }}</v-icon>
           {{ i.name }}
-        </v-list-item>
+        </v-list-item> -->
         <!-- <v-list-item> <v-icon left>home</v-icon>Home </v-list-item>
           <v-list-item> <v-icon left>opacity</v-icon>Blog </v-list-item>
         <v-list-item> <v-icon left>edit</v-icon>Contact </v-list-item>-->
-      </v-list>
+      <!-- </v-list>
     </v-navigation-drawer>
 
     <nuxt />
@@ -51,7 +62,7 @@
         </a>
       </v-row>
     </v-footer>
-  </v-app>
+  </v-app> -->
 </template>
 
 <script>
